@@ -1,0 +1,78 @@
+@import 'reset';
+@import 'variables';
+
+body{
+    overflow-x: hidden;
+    font-family: Inter;
+    background-color: $neutral-off-black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    main{
+        .card{
+            background-color: $neutral-dark-grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1rem 1rem 0 1rem;
+            padding: 1.8rem;
+            border-radius: 1rem;
+            min-width: 19.5rem;
+            .card__avatar{
+                border-radius: 50%;
+                height: 6rem;
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .card__name{
+                color: $neutral-white;
+                font-size: $size-name;
+                margin-bottom: 0.2rem;
+                font-weight: 700;
+            }
+            .card__location{
+                color: $primary-green;
+                font-size: $size-location;
+                font-weight: 600;
+            }
+            .card__description{
+                color: $neutral-white;
+                font-size: $size-description;
+                font-weight: 400;
+                margin-top: 1rem;
+            }
+            .card__link{
+                border-radius: 0.5rem;
+                width: 100%;
+                background-color: $neutral-grey;
+                color: $neutral-white;
+                font-size: $size-link;
+                margin-top: 1rem;
+                text-align: center;
+                padding: 0.7rem 0;
+                font-weight: 600;
+                &:hover{
+                    background-color: $primary-green;
+                    color: $neutral-off-black;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .attribution{
+            color: $neutral-white;
+            text-align: center;
+            margin: 1rem;
+        }
+    }
+}
